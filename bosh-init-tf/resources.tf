@@ -57,7 +57,7 @@ resource "openstack_networking_secgroup_rule_v2" "secgroup_rule_1" {
 }
 
 # floating ips
-resource "openstack_networking_floatingip_v2" "bosh" {
-  region = "${var.region_name}"
-  pool   = "${var.ext_net_name}"
-}
+/* resource "openstack_networking_floatingip_v2" "bosh" { */
+/*   region = "${var.region_name}" */
+/*   pool   = "${var.ext_net_name}" */
+/* } */
