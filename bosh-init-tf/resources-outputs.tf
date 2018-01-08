@@ -3,5 +3,5 @@ output "default_key_name" {
 }
 
 output "external_ip" {
-  value = "${openstack_networking_floatingip_v2.bosh.address}"
+  value = "${var.ip_failover}"
 }

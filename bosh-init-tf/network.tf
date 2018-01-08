@@ -22,15 +22,15 @@ resource "openstack_networking_subnet_v2" "bosh_subnet" {
 
 # router
 
-resource "openstack_networking_router_v2" "bosh_router" {
-  region           = "${var.region_name}"
-  name             = "bosh-router"
-  admin_state_up   = "true"
-  external_gateway = "${var.ext_net_id}"
-}
-
-resource "openstack_networking_router_interface_v2" "bosh_port" {
-  region    = "${var.region_name}"
-  router_id = "${openstack_networking_router_v2.bosh_router.id}"
-  subnet_id = "${openstack_networking_subnet_v2.bosh_subnet.id}"
-}
+#resource "openstack_networking_router_v2" "bosh_router" {
+#  region           = "${var.region_name}"
+#  name             = "bosh-router"
+#  admin_state_up   = "true"
+#  external_gateway = "${var.ext_net_id}"
+#}
+#
+#resource "openstack_networking_router_interface_v2" "bosh_port" {
+#  region    = "${var.region_name}"
+#  router_id = "${openstack_networking_router_v2.bosh_router.id}"
+#  subnet_id = "${openstack_networking_subnet_v2.bosh_subnet.id}"
+#}

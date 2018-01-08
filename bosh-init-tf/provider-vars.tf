@@ -39,3 +39,7 @@ variable "ext_net_name" {
 variable "region_name" {
   description = "OpenStack region name"
 }
+
+variable "ip_failover" {
+  description = "IP address to be used by the BOSH director"
+}
